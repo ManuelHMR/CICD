@@ -6,9 +6,7 @@ services:
     ports:
       - 4457:5432
     env_file:
-      - .env
-    volumes: 
-      - pg_sorteador-db:/var/lib/postgresql/data
+      - .env.test
 
   node_sorteador_app:
     container_name: node_sorteador_app
@@ -18,7 +16,4 @@ services:
     depends_on:
       - postgres_sorteador_db
     env_file:
-      - .env
-
-volumes:
-  pg_sorteador-db:
+      - .env.test

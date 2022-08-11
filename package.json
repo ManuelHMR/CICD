@@ -2,7 +2,7 @@
   "name": "sorteio-feliz",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "build": "tsc",

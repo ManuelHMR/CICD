@@ -4,8 +4,9 @@ WORKDIR /usr/src/
 
 COPY . .
 
-EXPOSE 5000
+RUN npm i
+RUN npm run build
 
-RUN npm i && npm run build && npx prisma generate
+EXPOSE 5000
 
 CMD [ "npm", "start" ]
